@@ -1,0 +1,58 @@
+@import '../../assets/css/global.scss';
+
+.NavBar{
+    border-bottom: 1px solid $deck-border-gray;
+}
+.NavBar-top{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px 0 0;
+}
+.NavBar-Bottom{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 0px 15px 50px;
+}
+.NavBar-top-button{
+    font-size: $deck-font-xm;
+    padding: 15px;
+    font-weight: 600;
+    color: $deck-dark-gray;
+} 
+.NavBar-top-button-Active{
+    font-size: $deck-font-xm;
+    padding: 15px;
+    font-weight: 600;
+    color: $deck-content-blue;
+}
+label{
+    margin: 0 10px 0 0 !important;
+    font-size: $deck-font-xm;
+    color: $deck-dark-gray;
+}
+select{
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 170px;
+    margin: 2px 15px 5px 0px !important;
+    color: $deck-dark-gray;
+    outline: none;
+    font-size: $deck-font-xm !important;
+}
+.NavBar-BDropdowns select{
+    appearance: none;
+}
+.NavBar-BDropdowns::after { 
+    content: "\25bc";
+    color: $deck-blue;
+    font-size: $deck-font-small;
+}
+.NavBar-BDropdowns { 
+     position: relative ;
+} 
+.NavBar-BDropdowns::after { 
+     position: absolute; 
+     top: 34px;
+     right: 26px;
+     cursor: default;
+}

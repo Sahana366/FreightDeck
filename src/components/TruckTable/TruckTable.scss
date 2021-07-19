@@ -1,0 +1,76 @@
+@import "../../assets/css/global.scss";
+
+.TruckTable {
+  margin: 15px 50px 15px 50px;
+}
+.Trucks-Delayed-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Delayed-Number{
+  color: $deck-white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: $deck-font-medium;
+  margin-right: 5px;
+}
+.Delayed{
+  font-weight: 600 !important;
+  color: red;
+  text-transform: uppercase;
+}
+.OnTime{
+  font-weight: 600 !important;
+  color: green;
+  text-transform: uppercase;
+}
+table {
+  border-collapse: collapse;
+  background-color: $deck-white !important;
+  width: 100%;
+  border-radius: 10px;
+}
+table th {
+  background-color: $deck-light-gray;
+  font-size: $deck-font-medium !important;
+  font-weight: 600 !important;
+  padding: 15px 10px;
+}
+table td {
+  font-size: $deck-font-xm !important;
+  font-weight: 300 !important;
+  padding: 10px;
+}
+table tr:hover {
+  td {
+    font-weight: 600 !important;
+    color: $deck-dark-gray;
+  }
+  background-color: $deck-light-blue;
+}
+table td,
+table th {
+  border: 1px solid $deck-border-gray;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr th:first-child {
+  border-left: 0;
+  border-top-left-radius: 10px;
+}
+table tr th:last-child {
+  border-right: 0;
+  border-top-right-radius: 10px;
+}
+table tr td:first-child {
+  border-left: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}

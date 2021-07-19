@@ -1,0 +1,201 @@
+@import "./assets/css/global.scss";
+
+.App {
+  /* text-align: center; */
+  margin: 0;
+  padding: 0;
+  background-color: $deck-background-color;
+}
+
+.Deck-Container {
+  margin: 20px 50px 15px 50px;
+}
+
+.w-49 {
+  width: 49%;
+}
+
+.text-xm-blue {
+  color: $deck-content-blue;
+  font-size: $deck-font-xm;
+  font-weight: 600;
+}
+
+.text-xm-gray {
+  color: $deck-dark-gray;
+  font-size: $deck-font-xm;
+}
+
+.text-xm-black {
+  color: $deck-black;
+  font-size: $deck-font-xm;
+}
+
+.text-sm-gray {
+  color: $deck-dark-gray;
+  font-size: $deck-font-small;
+}
+
+.bb {
+  border-bottom: 1px solid $deck-border-gray;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-right: -10px !important;
+//   margin-left: -10px !important;
+// }
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.Heading-Text {
+  color: $deck-content-blue;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  font-size: $deck-font-large;
+}
+.Gray-Heading-Text {
+  color: $deck-dark-gray;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.deck-button {
+  background: white;
+  text-transform: uppercase;
+  font-size: $deck-font-xm;
+  font-weight: 600;
+  color: $deck-blue;
+  border: 1px solid $deck-blue;
+  border-radius: 12px;
+  padding: 2px 9px;
+  margin-bottom: 15px;
+  outline: none !important;
+}
+
+.Truck-Card-two{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px 15px;
+  width: calc(50% - 4px);
+}
+
+$bg-color: white;
+$primaryTheme-color: green;
+$secondaryTheme-color: orange;
+$grey-color: #a3aec2;
+$darkGrey-color: #444a59;
+$tag-color: #03a9f4;
+
+.control-buttons {
+  text-align: center;
+  .btn {
+    padding: 7px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 12px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid $primaryTheme-color;
+    &:hover {
+      background: $primaryTheme-color;
+      color: white;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+.container {
+  width: 25%;
+  height: auto;
+}
+.steps-card {
+  height: auto;
+  padding: 20px 25px 0;
+  background: $bg-color;
+}
+@mixin stepStyling(
+  $color-primary,
+  $color-title,
+  $color-heading,
+  $barBG-color,
+  $border-thickness
+) {
+  position: relative;
+  margin-bottom: 15px;
+  color: $color-title;
+  .step-heading {
+    font-size: 14px;
+    color: $color-heading;
+    margin-bottom: 5px;
+    font-weight: 100;
+  }
+  .step-title {
+    font-size: 10px;
+    color: #444a59;
+    font-weight: 700;
+    margin-bottom: 4px;
+    position: absolute;
+    top: -9px;
+  }
+  .step-description {
+    font-size: 10px;
+    color: #444a59;
+    margin-bottom: 4px;
+    // position: absolute;
+    // top: 0px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: $barBG-color;
+    border: $border-thickness solid $color-primary;
+  }
+  &:last-child:after {
+    display: none;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -15px;
+    width: 1px;
+    height: 99.5%;
+    background-color: $color-heading;
+  }
+}
+
+.step-incomplete {
+  @include stepStyling($grey-color, $grey-color, $grey-color, white, 3px);
+}
+.step-current {
+  @include stepStyling(
+    $secondaryTheme-color,
+    $darkGrey-color,
+    $grey-color,
+    white,
+    3px
+  );
+}
+.step-completed {
+  @include stepStyling(
+    $primaryTheme-color,
+    $darkGrey-color,
+    $grey-color,
+    white,
+    3px
+  );
+}

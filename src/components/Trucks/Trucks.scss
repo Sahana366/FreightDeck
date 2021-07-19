@@ -1,0 +1,44 @@
+@import '../../assets/css/global.scss';
+
+.Trucks-heading{
+    color: $deck-content-blue;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+.Trucks-Card-Deck{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Truck-Card{
+    background-color: $deck-white;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.Truck-Card-Body{
+    display: flex;
+    justify-content: space-around;
+}
+.Card-div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.Trucks-Img{
+    width: 40px;
+    margin: 0 0 0 10px;
+}
+.Card-mid-content{
+    font-size: 35px;
+    padding: 15px 5px 15px 9px;
+    color: $deck-blue;
+    font-weight: 700;
+}
+.Card-right-content{
+    padding: 0 10px;
+    color: $deck-dark-gray;
+    font-weight: 700;
+    max-width: 110px;
+    text-align: left;
+    font-size: $deck-font-xl;
+}

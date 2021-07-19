@@ -1,0 +1,51 @@
+@import '../../assets/css/global.scss';
+
+.Header{
+    height: 60px;
+    border-bottom: 1px solid $deck-border-gray;
+    padding: 10px 20px 5px;
+    display: flex;
+}
+.Header-left{
+    width: 50%;
+    display: flex;
+}
+.Header-right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px 0 0;
+}
+.Header-right-inner{
+    display: flex;
+    align-items: center;
+}
+.Header-right-inner-left{
+    margin-right: 15px;
+    font-weight: 600;
+    color: $gray;
+}
+.Header-RIL-textUp{
+    font-size: $deck-font-small;
+    padding: 2px 5px;
+}
+.Header-RIL-textUp-colored{
+    color: $deck-blue;
+}
+.Header-RIL-textDown{
+    font-size: $deck-font-xs;
+    padding: 2px 5px;
+}
+.ProfileImage{
+    width: 40px;
+    border: 2px solid $deck-blue;
+    border-radius: 50%;
+}
+.Heading{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+    color: $deck-blue;
+    font-weight: bold;
+}
