@@ -1,7 +1,7 @@
 import "./Shipment.scss";
 import { MDBRow, MDBCol } from "mdbreact";
 
-const rightArrow = require('../../../assets/icons/right-arrow.png');
+const rightArrow = require('../../../assets/icons/right_arrow.svg');
 
 function Shipment() {
   return (

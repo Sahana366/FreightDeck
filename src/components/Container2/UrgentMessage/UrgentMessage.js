@@ -1,5 +1,5 @@
 import './UrgentMessage.scss';
-const attention = require('../../../assets/icons/attention.png')
+const attention = require('../../../assets/icons/error_outline-24px.svg')
 function UrgentMessage() {
     return (
         <div className="Truck-Card p-3 d-flex">

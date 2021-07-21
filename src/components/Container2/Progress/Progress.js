@@ -64,14 +64,14 @@ function Progress() {
   return (
     <div className="Truck-Card">
       <BarChart 
-          width={430}
+          width={400}
           height={250}
           data={data}
           barGap={3} barCategoryGap={7}
           margin={{
             top: 30,
             right: 30,
-            left: -20,
+            left: -30,
             bottom: 0,
           }}
         >
@@ -80,7 +80,7 @@ function Progress() {
           <YAxis tick={{fontSize: 8}} tickLine={false}/>
           {/* <Tooltip />
           <Legend /> */}
-          <Bar dataKey="units" fill="#8884d8" fontSize={14}/>
+          <Bar dataKey="units" fill="#8980D9" fontSize={14}/>
         </BarChart>
     </div>
   );

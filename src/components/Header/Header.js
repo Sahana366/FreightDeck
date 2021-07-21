@@ -1,7 +1,7 @@
 import './Header.scss';
 
 let logo = require('../../assets/icons/truck.png');
-let profileImg = require('../../assets/icons/profileImg.png');
+let profileImg = require('../../assets/icons/Driver.png');
 
 function Header() {
   return (

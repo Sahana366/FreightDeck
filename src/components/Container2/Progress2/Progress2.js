@@ -2,7 +2,7 @@ import React from "react";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
 
 function Progress2() {
-  const barColors = ["gray", "orange", "violet", "blue", "skyblue", "red"];
+  const barColors = ["#999999", "#FFB919", "#A250FF", "#2D37C8", "#19B9FF", "#CF4E4E"];
   const data = [
     {
       name: "Total",
@@ -38,7 +38,7 @@ function Progress2() {
   return (
     <div className="Truck-Card">
       <BarChart
-        width={430}
+        width={400}
         height={250}
         data={data}
         layout={"vertical"}
@@ -52,7 +52,7 @@ function Progress2() {
           bottom: 30,
         }}
       >
-        <CartesianGrid strokeDasharray="0 2" fill="#F2F2F2" />
+        <CartesianGrid strokeDasharray="0 2"/>
         <XAxis hide type="number" />
         <YAxis
           yAxisId="left"
@@ -79,7 +79,7 @@ function Progress2() {
           type="category"
         />
 
-        <Bar yAxisId="left" stackId="a" dataKey="start" fill="#F2F2F2" />
+        <Bar yAxisId="left" stackId="a" dataKey="start" fill="#ffffff00" />
         <Bar yAxisId="left" stackId="a" dataKey="end" fill="#82ca9d">
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={barColors[index % 20]} />

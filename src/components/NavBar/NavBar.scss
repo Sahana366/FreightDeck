@@ -1,5 +1,4 @@
 @import '../../assets/css/global.scss';
-
 .NavBar{
     border-bottom: 1px solid $deck-border-gray;
 }
@@ -31,9 +30,9 @@ label{
     color: $deck-dark-gray;
 }
 select{
-    padding: 5px 10px;
+    padding: 3px 10px;
     border-radius: 15px;
-    width: 170px;
+    width: 180px;
     margin: 2px 15px 5px 0px !important;
     color: $deck-dark-gray;
     outline: none;
@@ -43,16 +42,16 @@ select{
     appearance: none;
 }
 .NavBar-BDropdowns::after { 
-    content: "\25bc";
-    color: $deck-blue;
-    font-size: $deck-font-small;
+    content: url("../../assets/icons/keyboard_arrow_down-24px.svg");
+    // color: $deck-blue;
+    // font-size: $deck-font-small;
 }
 .NavBar-BDropdowns { 
      position: relative ;
 } 
 .NavBar-BDropdowns::after { 
      position: absolute; 
-     top: 34px;
-     right: 26px;
+     top: 27px;
+     right: 20px;
      cursor: default;
 }

@@ -1,9 +1,10 @@
 import "./Trucks.scss";
 
-let truck = require('../../assets/icons/LogoIcon.png');
-let urgent = require('../../assets/icons/truck-settings.png');
-let delayed = require('../../assets/icons/delayed.png');
-let customs = require('../../assets/icons/customs.png');
+let truck = require('../../assets/icons/Mask Group 3.svg');
+let timeSlot = require('../../assets/icons/Mask Group 6.svg');
+let urgent = require('../../assets/icons/Mask Group 5.svg');
+let delayed = require('../../assets/icons/Mask Group 7.svg');
+let customs = require('../../assets/icons/Mask Group 4.svg');
 function Trucks() {
   return (
     <div className="Deck-Container">
@@ -53,7 +54,7 @@ function Trucks() {
           <div className="Truck-Card">
               <div className="Truck-Card-Body">
                   <div className="Card-div">
-                    <img className="Trucks-Img" src={truck.default} alt="truck"></img>
+                    <img className="Trucks-Img" src={timeSlot.default} alt="truck"></img>
                   </div>
                   <div className="Card-div Card-mid-content">
                       5

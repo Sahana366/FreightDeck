@@ -1,9 +1,9 @@
 import "./TruckTable.scss";
 
-const refresh = require("../../assets/icons/refresh.png");
-const settings = require("../../assets/icons/settings.png");
-const calander = require("../../assets/icons/calander.png");
-const download = require("../../assets/icons/download.png");
+const refresh = require("../../assets/icons/refresh_black_24dp.svg");
+const settings = require("../../assets/icons/settings_black_24dp.svg");
+const calander = require("../../assets/icons/event_black_24dp.svg");
+const download = require("../../assets/icons/file_download_black_24dp.svg");
 function TruckTable() {
   return (
     <div className="Deck-Container">
@@ -18,13 +18,13 @@ function TruckTable() {
             <img src={refresh.default} alt="refresh" width="20px"></img>
           </span>
           <span className="pr-3">
-            <img src={settings.default} alt="settings" width="17px"></img>
+            <img src={settings.default} alt="settings" width="19px"></img>
           </span>
           <span className="pr-3">
-            <img src={calander.default} alt="calander" width="15px"></img>
+            <img src={calander.default} alt="calander" width="18px"></img>
           </span>
           <span>
-            <img src={download.default} alt="download" width="15px"></img>
+            <img src={download.default} alt="download" width="18px"></img>
           </span>
         </div>
       </div>
